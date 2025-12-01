@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BANGTAN BLOOMS PIZZERIA</title>
+<style>
+            
+/* ================= Header ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #cecef2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo + title container */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+#header-img {
+    width: 120px;
+    height: auto;
+}
+
+/* Website title */
+#title {
+    font-size: 28px;
+    font-weight: bold;
+    color:  #42034f;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* ================= Main Section ================= */
+main {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu Section */
+
+#menu-section {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+#menu-section h2 {
+    background-color:#efe7ff;
+    padding: 1%;
+    
+}
+
+article {
+    display: flex;
+    align-items: center;  
+    gap: 20px;            
+    margin-bottom: 40px;   
+ }
+/* Each pizza card */
+#menu-section article {
+    display: flex;          
+    gap: 20px;
+    align-items: flex-start; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#efe7ff;
+    box-shadow: 0 2px 5px rgba(20, 10, 118, 0.1);
+      width: 90%;   
+    max-width: 900px;
+}
+
+/* Pizza images */
+.pizza {
+    width: 280px;  
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pizza info */
+.pizza-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.pizza-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    color: #333;
+}
+
+.pizza-info p {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+/* sides info */
+.sides-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.sides-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: #333;
+}
+
+#menuside-sec {
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#menuside-sec article {
+    display: flex;         
+    gap: 20px;
+    align-items: flex-start; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#efe7ff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   width: 90%;  
+    max-width: 900px;
+}
+.sides {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* ================= Order Section ================= */
+#order-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+#order-section h2 {
+    text-align: center;
+}
+
+
+#order-section form {
+    max-width: 900px;
+    width: 700%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #efe7ff;
+}
+
+#order-section label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #333;
+}
+
+#order-section input[type="number"] {
+    width: 50px;
+    padding: 5px;
+}
+
+#order-section input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#order-section textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+#order-section input[type="submit"] {
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+#order-section input[type="submit"]:hover {
+    background-color: #d62828;
+   
+}
+
+/* ================= Footer ================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color:  #cecef2;
+    font-size: 14px;
+    color: #42034f;
+}
+
+/* ================= General Styles ================= */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebd8ff0e; 
+}
+</style>
+    </head>
+    <body>
+        <header>
+            <div class="logo-title">
+            <img id="header-img" src="imgs/BANGTAN-removebg-preview.png" alt="logo">
+            <h1 id="title">BANGTAN BLOOMS PIZZERIA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#menu-section">MENU</a></li>
+                    <li><a href="#order-section">ORDER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+                <section id="menu-section">
+                    <h2>Menu</h2>
+                <h3 id="menummain-sec"><i><u>PIZZAS</u></i></h3>
+                <article>
+                    <img src="imgs/download__11_-removebg-preview (1).png" class="pizza" alt="Panneer Paradise png">
+                    <div class="pizza-info">
+                    <h3>Panneer Paradise</h3>
+                    <p>Filled with creamy cheese and topped with fluffy panneer and basils <br> to give you the perfect diary delight.<br>
+                      <b> <i>₹350</i> </b> </p>
+                    </div>
+                </article>
+                 <article>
+                    <img src="imgs/A_pizza_with_vegetables_on_it-removebg-preview.png" class="pizza" alt="Veggie Garden png">
+                    <div class="pizza-info">
+                    <h3>Veggie Garden </h3>
+                    <p> Perfect and classic vegeteble pizza to fill your stomach with bell peppers, olives and mushrooms.<br> <b> <i>₹400</i> </b></p>
+                    </div>
+                </article>
+                 <article> 
+                    <img src="imgs/Margarita_Pizza__Plain_-removebg-preview.png" class="pizza" alt="Sunny Slice Margherita png">
+                     <div class="pizza-info">
+                    <h3>Sunny Slice Margherita</h3>
+                    <p>Classic Italian twist.Simply topped with a simple yet flavorful combination of tomatoes, fresh mozzarella,<br> basil, and extra virgin olive oil.<br> <b> <i>₹300</i> </b></p>
+                    </div>
+                </article>
+            </section>
+    
+                 <section id="menuside-sec">
+                   <h3><i><u>SIDES</u></i></h3>
+                 <article>
+                    <img src="imgs/classic fries rm.png" class="sides" alt="classic fries png">
+                    <div class="sides-info">
+                    <h3>Classic Fries</h3>
+                      <b> <i>₹150</i> </b> 
+                    </div>
+                </article>
+                 <article>
+                    <img src="imgs/Vegan_Cheese_Fries-removebg-preview.png" class="sides" alt="cheesy fries png">
+                    <div class="sides-info">
+                    <h3>Cheesy Fries</h3>
+                      <b> <i>₹250</i> </b> 
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/bread rm.png" class="sides" alt="garlic bread png">
+                    <div class="sides-info">
+                    <h3>Garlic Bread</h3>
+                      <b> <i>₹139</i> </b> 
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/hot choco rm.png" class="sides" alt="hot choco png">
+                    <div class="sides-info">
+                    <h3>Hot Chocolate</h3>
+                      <b> <i>₹230</i> </b> 
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/fanta rm.png" class="sides" alt="fanta png">
+                    <div class="sides-info">
+                    <h3>Fanta</h3>
+                      <b> <i>₹143</i> </b> 
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/cola rm.png" class="sides" alt="cola png">
+                    <div class="sides-info">
+                    <h3>Cola</h3>
+                      <b> <i>₹143</i> </b> 
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/sprite rm.png" class="sides" alt="sprite png">
+                    <div class="sides-info">
+                    <h3>Sprite</h3>
+                      <b> <i>₹143</i> </b> 
+                    </div>
+                </article>
+         
+            </section>
+                <section id="order-section">
+                   
+                <form>
+                    <h2><i>Place Your Order</i></h2>
+                    <article> 
+                        <label>Panneer Paradise: <input type="number" min="0" max="5">  </label>
+                   </article>
+                   <br>
+                   <article> 
+                        <label>Veggie Garden:  <input type="number" min="0" max="5">  </label>
+                   </article>
+                   <br>
+                   <article> 
+                        <label>Sunny Slice Margherita: <input type="number" min="0" max="5"> </label>
+                   </article>
+                   <br>
+                   <h3><i>Sides</i></h3>
+                   <article> 
+                        <label>  <input type="checkbox" > Classic Fries </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                   </article>
+                   <br>
+                   <article> 
+                        <label>  <input type="checkbox" > Cheesy Fries </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                   </article>
+                   <br>
+                    <article> 
+                        <label>  <input type="checkbox" > Garlic Bread </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                   </article>
+                   <br>
+                    <article> 
+                        <label>  <input type="checkbox" > Hot Chocolate </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                   </article>
+                   <br>
+                   <article> 
+                        <label>  <input type="checkbox" > Fanta  </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                    </article>
+                    <br>
+                   <article> 
+                        <label>  <input type="checkbox" > Cola </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                    </article>
+                    <br>
+                    <article> 
+                        <label>  <input type="checkbox" > Sprite </label>
+                        <label>
+                            <input type="number" min="0" max="3"> 
+                        </label>
+                    </article>
+                    <br>
+                    <article>
+                        <textarea id="data-entering" rows="5" cols="35" placeholder="Type in your special requests here..."></textarea>
+                    </article>
+                    <br>
+                    <article>
+                        <input type="submit" value="Go To Checkout">
+                    </article>
+                </form>
+            </section>
+        </main>
+        <br>
+        <hr>
+        <footer>
+           <p> Made with love by <i>Nantae</i></p> 
+        </footer>
+    </body>
+</html>
